@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CABEÇALHO */
+
+header{
+    background-color: #ffffff;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 10px 30px;
+}
+
+header img {
+    width: 150px;
+    
+}
+
+
+header a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header a:hover{
+    text-shadow: 4px 2px 10px rgb(38, 199, 16);
+}
+
+.limita-secao {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* CAPA */
+.capa {
+    background: url("https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula7/img/bg-estacao.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.capa::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.capa div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+    z-index: 1;
+}
+
+h1 {
+    
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h1, h2 {
+    margin: 0;
+    text-shadow: 1px 1px 10px black;
+    color: #fff;
+}
+
+.limita-secao div:first-of-type {
+    width: 100%;
+}
+
+.secao-destaque img:first-of-type {
+    width: 100%;
+}
+
+#ponto{
+    background-color: rgb(210, 207, 207);
+}
+
+h3{
+    font-size: 32px;
+    margin: 0 0 40px 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 30px black;
+}
+
+.secao-destaque p::first-letter{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p{
+    line-height: 30px;
+    text-align: left;
+}
+
+
+li{
+    display: flex;
+    margin: 14px 0 0px 0;
+}
+
+li:hover{
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin: 0px 6px 0 0;
+    background: url("https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula7/img/seta.png");
+}
+
+
+.galeria img{
+    width: calc((100% / 3) - 6px);
+    opacity: 0.6;
+    padding: 0px;
+}
+
+.galeria img:hover{
+    opacity: 1;
+    /* margin: 2px; */
+    box-shadow: 1px 1px 20px;
+}
+
+/* rodape: cor de fundo, flex*/
+
+footer{
+    background-color: #f5c002;
+}
+
+footer div{
+    padding: 15px;
+}
