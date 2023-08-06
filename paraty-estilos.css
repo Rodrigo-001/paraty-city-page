@@ -66,6 +66,7 @@ section {
     background: url("https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula7/img/bg-estacao.jpg") no-repeat;
     background-size: cover;
     height: 100%;
+    min-height: 408px;
     align-items: center;
     position: relative;
 }
