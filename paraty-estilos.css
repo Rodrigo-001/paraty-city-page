@@ -12,6 +12,11 @@ body {
 
 /* CABEÇALHO */
 
+.secao-topo {
+    max-width: 96%;
+    margin: 0 auto;
+}
+
 header {
     background-color: #ffffff;    
 }
