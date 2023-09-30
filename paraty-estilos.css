@@ -13,7 +13,7 @@ body {
 /* CABEÇALHO */
 
 .secao-topo {
-    max-width: 96%;
+    /* max-width: 96%; */
     margin: 0 auto;
 }
 
@@ -38,6 +38,11 @@ main img{
     border-radius: 6px;
 }
 
+nav {
+    MIN-WIDTH: 310PX;
+    TEXT-ALIGN: center;
+    DISPLAY: flex;
+}
 
 header a {
     font-size: 16px;
